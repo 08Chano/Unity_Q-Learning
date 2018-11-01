@@ -1,0 +1,14 @@
+My Experimental Unity build of Q-Learning to navigate Unknown spaces.
+Paper is attached.
+
+This was used to test how practical a basic form of Q-Learning is for
+games instead of pre-programming all of their navigation functions.
+In terms of success this ranged from very successful to not as successful,
+this came about two problems: the agents wouldn't update their entire path
+if they reached the gaol and the flooring method used would cause the
+agent to break on corners and create large negative spaces relative to
+their enviroment. This meant they would block their access to the exit doors,
+creating an infinite loop and couldn't break it because the flooring method
+would reset their path. However, this method does work in open spaces. As
+the method stops it from leaning on the boundaries leaving about two to three
+tiles depending on the map size.
